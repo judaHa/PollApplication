@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+
+       <ImageView android:id="@+id/icon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icone_favoris">
+       </ImageView>
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="10dp" >
+       
+               <TextView
+                android:id="@+id/titre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="left" />
+
+               <TextView
+                   android:id="@+id/points"
+                   android:layout_width="fill_parent"
+                   android:layout_height="46dp"
+                   android:textSize="10sp"
+                   android:gravity="left" />
+
+       </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <!-- View Title Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="Mise à jour du profil"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <!-- Name TextField -->
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pseudo" />
+
+        <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date De Naissance" />
+
+        <!-- Email TextField -->
+
+
+        <!-- Password TextField -->
+
+
+        <!-- Error message -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexe"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/SpinnerSexe"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_weight="0.08" />
+
+      <TextView
+            android:id="@+id/Update_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#e30000"
+            android:textStyle="bold" />
+
+        <!-- Login Button -->
+
+        <EditText
+            android:id="@+id/txtProfession"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Profession" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ancien password"
+            android:password="true" >
+
+            <requestFocus />
+        </EditText>
+  <EditText
+            android:id="@+id/txtnewPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="nouveau password"
+            android:password="true" >
+
+            <requestFocus />
+        </EditText>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Valider" />
+
+        <!-- Link to Login Screen -->
+    </LinearLayout>
+
+</ScrollView>
